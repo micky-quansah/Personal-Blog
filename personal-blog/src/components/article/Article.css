@@ -1,0 +1,64 @@
+.article-container{
+  padding: 40px  3rem 0 5rem;
+  width: 100%;
+}
+.article-title{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 200;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-style: italic;
+  line-height: 2em;
+}
+.article-time{
+  font-size: 0.7rem;
+  margin-bottom: 30px;
+  color: orange;
+  text-align: center;
+}
+.article-summary{
+  font-size: 1.5rem;
+  font-weight: 100;
+  line-height: 2rem;
+  color:#3866ff;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.article-image{
+  height: 60vh;
+  width: 100%;
+  margin: 20px auto;
+}
+.article-paragraph{
+  font-size: 1.5rem;
+  font-weight: 100;
+  line-height: 2.5rem;
+  text-align: left;
+  margin-bottom: 2rem;
+  color:#646464;
+}
+.article-conclusion{
+  font-size: 1.5rem;
+  font-weight: 100;
+  line-height: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color:#3866ff;
+}
+.article-subject-matter{
+  font-size: 1.5rem;
+  font-weight: 100;
+  line-height: 2rem;
+  text-align: center;
+  margin-right: 3rem;
+  color:#20251f;
+}
+.author{
+  font-size: 1.5rem;
+  font-weight: 150;
+  line-height: 2rem;
+  text-align: center;
+  margin-right: 3rem;
+  color: #20251f;
+}

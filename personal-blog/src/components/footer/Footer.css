@@ -1,0 +1,44 @@
+.footer-container{
+  height: 50vh;
+  width: 100%;
+  padding: 20px;
+  border-radius: 20px 20px 0 0;
+  background: rgba(0, 0, 0, 0.295);
+  display: grid;
+  grid-template-columns: 10% 50% 40%;
+}
+.footer-logo{
+  height: 200px;
+  margin:  20px 50px;
+  width: 300px;
+}
+.footer-info{
+  font-size: 0.8rem;
+  font-weight: 200;
+  margin: 0 2rem;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  line-height: 1.5em;
+}
+.footer-child2-info{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 200;
+}
+.sociallogo{
+	list-style: none;
+  padding-top: 20px;
+  margin-top: 50px;
+}
+.footer-li{
+  display: inline;
+}
+.table {
+	display: table;
+	margin: 0 auto;
+}
+.footer-img {
+  height: 50px;
+  width: 50px;
+  margin: 0;
+}
