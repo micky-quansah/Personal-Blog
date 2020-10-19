@@ -1,5 +1,6 @@
 import React from 'react';
 import './Article.css';
+import Rating from '../article_rating/Article_rating'
 
 function Article(props) {
 
@@ -7,8 +8,8 @@ function Article(props) {
 
   return(
     <section>
-      {articles.map((item) => (
-        <div className="article-container">
+      {articles.map((item, index) => (
+        <div key={index} className="article-container">
           <h2 className="article-title">{item.title}</h2>
           <p className="article-time">{item.date}</p>
           <p className="article-summary">{item.summary}</p>
@@ -21,6 +22,7 @@ function Article(props) {
             <span className="article-subject-matter">Subject Matter: {item.subject_matter}</span>
             <span className="auth0r">Written By {item.author}</span>
           </p>
+          <Rating></Rating>
         </div>
       ))}
     </section>

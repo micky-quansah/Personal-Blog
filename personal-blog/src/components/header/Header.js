@@ -10,8 +10,8 @@ function Header() {
       link: '#Home'
     },
     {
-      name: 'Articles',
-      link: '#Articles'
+      name: 'Create Article',
+      link: '#CreateArticles'
     },
     {
       name: 'About',
@@ -31,7 +31,7 @@ function Header() {
       <div className="header-link-containers">
         <ul className="header-list">
           {header_items.map((item)=>(
-            <a href={item.link}><li key={item.name} className="header-link-item baseline " >{item.name}</li></a>
+            <a key={item.name} href={item.link}><li className="header-link-item baseline " >{item.name}</li></a>
           ))}
         </ul>
       </div>

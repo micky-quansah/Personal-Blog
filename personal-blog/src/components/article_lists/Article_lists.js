@@ -5,8 +5,8 @@ function ArticleLists(props) {
   let articles = props.article;
   return(
     <section className="article-list">
-      {articles.map((item)=>(
-      <details>
+      {articles.map((item, index)=>(
+      <details key={index}>
       <summary>{item.title}</summary>
       <p>{item.summary}<button className="article-more-button">Read More</button></p>
       </details>
