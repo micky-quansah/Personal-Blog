@@ -1,10 +1,17 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Main.css';
 import ArticleLists from '../../components/article_lists/Article_lists';
 import article_image1 from '../../images/ian-schneider-TamMbr4okv4-unsplash.jpg';
 import Article from '../../components/article/Article';
+import IndividualArticle from '../article/IndividualArticle';
 
-function Main() {
+function Main(props) {
+  const [index, setIndex] = useState();
+  const [selected, setSelected] = useState(false);
+
+  const newArticle = props.addNewArticle;
+
+  console.log(selected , index);
 
   const articles = [
     {
@@ -35,7 +42,7 @@ function Main() {
       author:'Michael Quansah'
     },
     {
-      title:'Programming',
+      title:'Active Learning Pays',
       date: '10/12/2020',
       summary:`The easiest way to understand deep focus is to recall the times
               you were in it. It may have been just a few minutes ago as you
@@ -63,10 +70,14 @@ function Main() {
     }
   ]
 
+  if(props.submited){
+    articles.unshift(newArticle);
+  }
+
   return (
       <div className="main-page">
-      <Article article={articles}></Article>
-      <ArticleLists className="lists" article={articles}/>
+      {selected?<IndividualArticle article={articles[index]}></IndividualArticle>:<Article article={articles}></Article>}
+      <ArticleLists className="lists" index={setIndex} select={setSelected} article={articles}/>
       </div>
   );
 }

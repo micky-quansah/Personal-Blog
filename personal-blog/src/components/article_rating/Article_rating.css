@@ -2,6 +2,18 @@
   display: grid;
   grid-template-columns: auto auto;
 }
+.votes{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.count{
+  width: 2rem;
+  height: 2rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: 100;
+  text-align: justify;
+}
 .rating-icons{
   width: 2rem;
   height: 2rem;
@@ -32,4 +44,16 @@
 .send-comment:active{
   background-color:  rgb(154, 255, 129);
   border:none;
+}
+.displayComment{
+  width: 90%;
+  height: 3rem;
+  margin: 0rem;
+  background-color: rgba(155, 155, 155, 0.493);
+  border-radius: 0.5rem;
+  list-style: none;
+  overflow-x: hidden;
+}
+.comment-li{
+  margin: 0rem;
 }

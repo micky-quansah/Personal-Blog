@@ -1,0 +1,127 @@
+/* body {
+	background: #2e394d;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+* {
+	box-sizing: border-box;
+} */
+
+*:before, *:after {
+	content: '';
+	position: absolute;
+}
+
+#normal {
+	height: 40px;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	width: 40px;
+}
+
+/* .toggle-wrapper {
+	flex: 1 1 calc(100% / 3);
+	min-height: 50vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	position: relative;
+} */
+
+/* @media (max-width: 960px) {
+	.toggle-wrapper {
+		flex: 1 1 calc(100% / 2);
+	}
+}
+
+@media (max-width: 700px) {
+	.toggle-wrapper {
+		flex: 1 1 100%;
+	}
+}
+
+.toggle-wrapper:nth-child(1) {
+	background: #dec387;
+} */
+
+/* .name {
+	width: 80%;
+	position: absolute;
+	font: 500 14px 'Rubik', sans-serif;
+	letter-spacing: .5px;
+	text-transform: uppercase;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+	bottom: 15px;
+	right: 15px;
+	text-align: right;
+} */
+
+/* .toggle {
+	position: relative;
+	display: inline-block;
+} */
+
+.toggle-item {
+	width: 3rem;
+	background: #2e394d;
+	height: 1.5rem;
+	display: inline-block;
+	border-radius: 50px;
+	margin: 2.5rem 1rem ;
+	position: relative;
+	transition: all .3s ease;
+	transform-origin: 20% center;
+	cursor: pointer;
+}
+
+.toggle-item:before {
+	display: block;
+	transition: all .2s ease;
+	width: 1rem;
+	height: 1rem;
+	top: .25em;
+	left: .25em;
+	border-radius: 2em;
+	border: 2px solid #88cf8f;
+	transition: .3s ease;
+}
+
+.normal .toggle-item {
+	background: #dee0ff;
+	border: 0.5px solid rgba(117, 117, 117, 0.31);
+	box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.2), 0 -3px 4px rgba(0, 0, 0, 0.15);
+}
+
+.normal .toggle-item:before {
+	border: none;
+	width: 1rem;
+	height: 1rem;
+	box-shadow: inset 0.5px -1px 1px rgba(0, 0, 0, 0.35);
+	background: #fff;
+	transform: rotate(-25deg);
+}
+
+.normal .toggle-item:after {
+	background: transparent;
+	/* height: calc(50% + 8px); */
+	border-radius: 30px;
+	top: -5px;
+	/* width: calc(50% + 8px); */
+	left: -4px;
+	z-index: 0;
+	box-shadow: inset 0px 2px 4px -2px rgba(0, 0, 0, 0.2), 0px 1px 2px 0px rgba(151, 151, 151, 0.2);
+}
+
+#normal:checked + .toggle-item {
+	background: #0d0a30;
+}
+
+#normal:checked + .toggle-item:before {
+	left: 25px;
+}

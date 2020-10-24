@@ -1,10 +1,11 @@
 .container{
+  position: relative;
   box-sizing: border-box;
   margin: auto;
   height: 10vh;
   width: 100%;
   display: grid;
-  grid-template-columns: 20% 60% 20%;
+  grid-template-columns: 20% 50% 20% 10%;
   box-shadow: 10px;
   box-shadow: 0px 0px 8px 2px #444444;
 }
@@ -17,11 +18,7 @@ img{
   list-style-type: none;
 }
 a:link {
-  color: rgb(0, 195, 255);
-  text-decoration: none;
-}
-a:visited {
-  color: rgb(0, 255, 170);
+  color: rgb(0, 255, 255);
   text-decoration: none;
 }
 a:hover {
@@ -46,12 +43,12 @@ li{
   transition: all .2s cubic-bezier(0, 1.26, .8, 1.28);
 }
 #loginButton:hover {
-  background-color:  rgba(125, 94, 209, 0.836);
+  background-color:  rgba(128, 255, 155, 0.836);
   cursor: pointer;
   transform: scale(1.2, 1.2);
 }
 #loginButton:active {
-  background-color: rgb(72, 90, 255);
+  background-color: rgb(126, 255, 115);
 }
 .baseline{
   border-bottom: 1px solid rgba(79, 31, 211, 0.836);
@@ -59,4 +56,17 @@ li{
 }
 .baseline:hover{
   border-bottom: 2px solid rgba(79, 31, 211, 0.836);
+}
+.noLoggedIn{
+  font-size: 2rem;
+  font-weight: 100;
+  margin: 5rem 4rem;
+  text-align: center;
+  background-color: rgba(222, 184, 135, 0.411);
+}
+.toggle{
+  position: absolute;
+  top: 10%;
+  left: 90%;
+  margin: -25px 0 0 -25px;
 }

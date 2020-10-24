@@ -1,6 +1,6 @@
 .create-container{
   margin: 0rem auto;
-  padding: 5rem 7rem;
+  padding: 5rem 3rem;
   background: linear-gradient( to left top, rgba(191, 191, 255, 0.527) 10%, rgba(183, 255, 243, 0.644));
   width: 70%;
 }
@@ -25,6 +25,7 @@
   border: none;
 }
 .create-article-textareas{
+  width: 90%;
   border-radius: 1rem;
   padding: 1rem;
   margin-bottom: 4rem;
