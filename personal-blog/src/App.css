@@ -3,7 +3,10 @@
   margin: 0px;
   padding: 0px;
 }
-.dark{
-  color: aliceblue !important;
-  background-color: rgb(12, 6, 24) !important;
+.app{
+  position: relative;
+}
+.darkapp{
+  position: relative;
+  background-color: rgb(12, 6, 24);
 }

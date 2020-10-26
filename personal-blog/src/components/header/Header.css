@@ -1,5 +1,8 @@
 .container{
-  position: relative;
+  position: sticky;
+  top: 0rem;
+  background-color: #ffffff;
+  z-index: 5;
   box-sizing: border-box;
   margin: auto;
   height: 10vh;
@@ -17,6 +20,10 @@ img{
   display: inline-flex;
   list-style-type: none;
 }
+a{
+  color: rgb(170, 80, 136);
+  text-decoration: none;
+}
 a:link {
   color: rgb(0, 255, 255);
   text-decoration: none;
@@ -26,14 +33,14 @@ a:hover {
   text-decoration: none;
 }
 a:active {
-  color: rgb(0, 255, 255);
+  color: rgb(0, 255, 191);
   text-decoration: none;
 }
 li{
   padding: 10px 30px;
 }
 #loginButton {
-  background-color: rgb(0, 255, 170);
+  background-color: rgb(0, 214, 143);
   margin: 20px;
   width: 110px;
   height: 30px;
@@ -58,15 +65,50 @@ li{
   border-bottom: 2px solid rgba(79, 31, 211, 0.836);
 }
 .noLoggedIn{
+  height: 50vh;
   font-size: 2rem;
   font-weight: 100;
   margin: 5rem 4rem;
+  padding: 10%;
   text-align: center;
-  background-color: rgba(222, 184, 135, 0.411);
+  background-color: rgb(222, 184, 135);
 }
 .toggle{
   position: absolute;
   top: 10%;
   left: 90%;
   margin: -25px 0 0 -25px;
+}
+
+
+/* darktheme */
+.darkbaseline{
+  border-bottom: 1px solid rgba(255, 255, 255, 0.836);
+  margin: 0 10px;
+}
+.darkbaseline:hover{
+  border-bottom: 2px solid rgba(255, 255, 255, 0.836);
+}
+.darkcontainer{
+  position: sticky;
+  top: 0rem;
+  background-color:#0d0a30;
+  z-index: 5;
+  box-sizing: border-box;
+  margin: auto;
+  height: 10vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 20% 50% 20% 10%;
+  box-shadow: 10px;
+  box-shadow: 0px 0px 8px 2px #444444;
+}
+.darknoLoggedIn{
+  height: 50vh;
+  font-size: 2rem;
+  font-weight: 100;
+  padding: 10%;
+  margin: 5rem 4rem;
+  text-align: center;
+  background-color: rgb(206, 180, 255);
 }

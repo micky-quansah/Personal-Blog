@@ -7,7 +7,7 @@ function Ratings() {
   const [upVote, setUpVote] = useState(0);
   const [downVote, setDownVote] = useState(0);
   const [comment, setComment] = useState({value:""});
-  const [displayComment, setDisplayComment] = useState(["Like how you think!"]);
+  const [displayComment, setDisplayComment] = useState(["no comments yet"]);
   
   let downClick = 0;
 
@@ -38,7 +38,6 @@ function Ratings() {
   const handleSubmit = (event) => {
     event.preventDefault();
     setDisplayComment(comment.value);
-    console.log(displayComment);
   }
 
   return (
@@ -55,7 +54,7 @@ function Ratings() {
           <p className="count" > {downVote} </p>
         </div>
           <ul className="displayComment">
-              <li className="comment-li">{displayComment}<hr/></li>
+              <li className="comment-li">{displayComment}</li>
           </ul>
       </div>
     </section>

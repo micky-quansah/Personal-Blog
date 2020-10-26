@@ -41,7 +41,51 @@
         font-family: 'Roboto', sans-serif;
       }
       #submitform[type=submit] {
-        background: rgba(189, 189, 189, 0.2);
+        background: rgba(107, 107, 107, 0.2);
+        width: 100%;
+        padding: 2vh;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px 4px;
+      }
+
+      /* dark mode */
+
+      #darkform-section {
+        width: 60%;
+        margin: auto;
+        height: 100vh;
+        background: linear-gradient(to top left, #002636da, #004d30dc);
+        background-repeat: cover;
+        color: rgb(255, 255, 255);
+      }
+      .darkinput{
+        margin-bottom: 2rem;
+        border-right: none;
+        border-top: none;
+        border-left: none;
+        background-color:transparent;
+        outline: none;
+        color: rgb(255, 255, 255);
+        caret-color: rgb(0, 216, 83);
+      }
+      .darkinput-text::placeholder {
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-family: 'Roboto', sans-serif;
+      }
+      .darkinput-text::placeholder {
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-family: 'Roboto', sans-serif;
+      }
+      .darkinput-email::placeholder {
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-family: 'Roboto', sans-serif;
+      }
+      #darksubmitform[type=submit] {
+        background: rgba(36, 252, 36, 0.801);
         width: 100%;
         padding: 2vh;
         border: none;

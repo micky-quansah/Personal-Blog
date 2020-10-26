@@ -1,6 +1,7 @@
 .user-reactions{
   display: grid;
   grid-template-columns: auto auto;
+  color: rgb(0, 17, 255);
 }
 .votes{
   display: grid;
@@ -49,7 +50,6 @@
   width: 90%;
   height: 3rem;
   margin: 0rem;
-  background-color: rgba(155, 155, 155, 0.493);
   border-radius: 0.5rem;
   list-style: none;
   overflow-x: hidden;

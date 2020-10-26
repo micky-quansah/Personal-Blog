@@ -1,7 +1,7 @@
 .create-container{
   margin: 0rem auto;
   padding: 5rem 3rem;
-  background: linear-gradient( to left top, rgba(191, 191, 255, 0.527) 10%, rgba(183, 255, 243, 0.644));
+  background: linear-gradient( to left top, rgba(191, 191, 255, 0.37) 10%, rgba(183, 255, 243, 0.452));
   width: 70%;
 }
 .create-article-heading{
@@ -43,3 +43,25 @@
   background: linear-gradient( to left top, rgb(160, 160, 255) 10%, rgb(143, 255, 236));
   border: none;
 }
+
+  /* dark mode */
+
+  .darkcreate-article-inputs{
+    width: 30rem;
+    height: 3rem;
+    background-color:rgba(30, 23, 87, 0.849);
+    color: white;
+    border-radius: 1rem;
+    padding: 0rem 1rem;
+    margin-bottom: 4rem;
+    border: none;
+  }
+  .darkcreate-article-textareas{
+    width: 90%;
+    border-radius: 1rem;
+    background-color:  rgba(30, 23, 87, 0.849);
+    color: white;
+    padding: 1rem;
+    margin-bottom: 4rem;
+    border: none;
+  }

@@ -1,9 +1,10 @@
-import React, {useState} from 'react';
+import React, {useState, useContext} from 'react';
 import './Create_article.css'
+import { AppContext } from "../themeProvider-component/AppTheme";
 
 function CreateArticle(props) {
   const [date, setDate] = useState(null);
-  const [img, setImg] = useState({file:null});
+  const [img, setImg] = useState(null);
   const [title, setTitle] = useState({value:""});  
   const [summary, setSummary] = useState({value:""});  
   const [paragraphOne, setParagraphOne] = useState({value:""});
@@ -12,11 +13,10 @@ function CreateArticle(props) {
   const [conclusion, setConclusion] = useState({value:""});
   const [subjectMatter, setSubjectMatter] = useState({value:""});
   const [author, setAuthor] = useState({value:""});
+  const { themeMode } = useContext(AppContext);
 
   const handleChange = (event) => {
-    setImg({
-      file: URL.createObjectURL(event.target.files[0])
-    })
+    setImg( URL.createObjectURL(event.target.files[0]) );
   }
 
   const handleAuthor = (e) => {
@@ -82,32 +82,32 @@ function CreateArticle(props) {
 
       <form>
         <label className="create-article-labels" htmlFor="title" >Title</label><br/>
-        <input className="create-article-inputs" value={title.value} id="title" name="title" type="text" placeholder="Enter Title Here" onChange={handleTitle} /><br/>
+        <input className={themeMode+"create-article-inputs"} value={title.value} id="title" name="title" type="text" placeholder="Enter Title Here" onChange={handleTitle} /><br/>
 
         <label className="create-article-labels" htmlFor="summary" >Article Summary </label><br/>
-        <textarea className="create-article-textareas" value={summary.value} id="summary" name="summary" rows="10" cols="100" placeholder="Enter Summary Here" onChange={handleSummary}></textarea><br/>
+        <textarea className={themeMode+"create-article-textareas"} value={summary.value} id="summary" name="summary" rows="10" cols="100" placeholder="Enter Summary Here" onChange={handleSummary}></textarea><br/>
 
         <label className="create-article-labels" htmlFor="image" >Select an image</label>
         <input type="file" id="image" name="image" onChange={handleChange} /><br/>
-        <img src={img.file}/><br/><br/>
+        <img src={img}/><br/><br/>
 
         <label className="create-article-labels" htmlFor="paragraph1" >First Paragraph</label><br/>
-        <textarea className="create-article-textareas" value={paragraphOne.value} id="paragraph1" rows="10" cols="100" placeholder="Enter First Paragraph Here" name="paragraphOne" onChange={handleParagraph1}></textarea><br/>
+        <textarea className={themeMode+"create-article-textareas"} value={paragraphOne.value} id="paragraph1" rows="10" cols="100" placeholder="Enter First Paragraph Here" name="paragraphOne" onChange={handleParagraph1}></textarea><br/>
 
         <label className="create-article-labels" htmlFor="paragraph2" >Second Paragraph</label><br/>
-        <textarea className="create-article-textareas" value={paragraphTwo.value} id="paragraph2" rows="10" cols="100" placeholder="Enter Second Paragraph Here" name="paragraphTwo" onChange={handleParagraph2}></textarea><br/>
+        <textarea className={themeMode+"create-article-textareas"} value={paragraphTwo.value} id="paragraph2" rows="10" cols="100" placeholder="Enter Second Paragraph Here" name="paragraphTwo" onChange={handleParagraph2}></textarea><br/>
 
         <label className="create-article-labels" htmlFor="paragraph3" >Third Paragraph</label><br/>
-        <textarea className="create-article-textareas" value={paragraphThree.value} id="paragraph3" rows="10" cols="100" placeholder="Enter Third Paragraph Here" name="paragraphThree" onChange={handleParagraph3}></textarea><br/>
+        <textarea className={themeMode+"create-article-textareas"} value={paragraphThree.value} id="paragraph3" rows="10" cols="100" placeholder="Enter Third Paragraph Here" name="paragraphThree" onChange={handleParagraph3}></textarea><br/>
 
         <label className="create-article-labels" htmlFor="conclusion" >Conclusion</label><br/>
-        <textarea className="create-article-textareas" value={conclusion.value} id="conclusion" rows="10" cols="100" placeholder="Enter Conclusion Here" name="conclusion" onChange={handleConclusion}></textarea><br/>
+        <textarea className={themeMode+"create-article-textareas"} value={conclusion.value} id="conclusion" rows="10" cols="100" placeholder="Enter Conclusion Here" name="conclusion" onChange={handleConclusion}></textarea><br/>
 
         <label className="create-article-labels" htmlFor="subject" >Subject Matter</label><br/>
-        <input className="create-article-inputs" value={subjectMatter.value} id="subject" type="text" placeholder="Enter Subject Matter Here" name="subjectMatter" onChange={handleSubjectMatter}></input><br/>
+        <input className={themeMode+"create-article-inputs"} value={subjectMatter.value} id="subject" type="text" placeholder="Enter Subject Matter Here" name="subjectMatter" onChange={handleSubjectMatter}></input><br/>
 
         <label className="create-article-labels" htmlFor="writer" >Writer's Name</label><br/>
-        <input className="create-article-inputs" value={author.value} id="writer" type="text" placeholder="Enter Name of Writer Here" name="author" onChange={handleAuthor}></input><br/>
+        <input className={themeMode+"create-article-inputs"} value={author.value} id="writer" type="text" placeholder="Enter Name of Writer Here" name="author" onChange={handleAuthor}></input><br/>
 
         <input className="create-article-buttons" type="submit" value="Create" onClick={handleSubmit} />
 

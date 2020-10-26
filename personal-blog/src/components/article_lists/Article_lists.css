@@ -2,9 +2,11 @@
   width: 100% ;
   padding: 0 10px;
   padding-top: 10rem;
+  border-radius: 0.5rem;
 }
 details{
   margin-bottom: 1rem;
+  border-radius: 0.5rem;
 }
 details > summary {
   padding: 4px;
@@ -34,3 +36,27 @@ details > p {
   box-shadow: 1px 2px 2px #bbbbbb;
   font-weight: 100;
 }
+
+  /* dark mode */
+
+  .darkdetails > summary {
+    padding: 4px;
+    width: 100%;
+    font-weight: 200;
+    font-size: 1rem;
+    background-color: #05031d;
+    color: white;
+    border: none;
+    box-shadow: 1px 1px 2px #1b1b1b;
+    cursor: pointer;
+  }
+  .darkdetails > p {
+    background-color:#08061f;
+    color: white;
+    border: none;
+    padding: 20px;
+    margin: 0;
+    box-shadow: 1px 1px 2px #bbbbbb;
+    font-weight: 200;
+    line-height: 1.5rem;
+  }

@@ -1,8 +1,10 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import './Article_lists.css';
-import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
+import { AppContext } from "../themeProvider-component/AppTheme";
 
 function ArticleLists(props) {
+  
+  const { themeMode } = useContext(AppContext);
 
   const select = props.select;
   const itemIndex = props.index;
@@ -17,7 +19,7 @@ function ArticleLists(props) {
   return(
     <section className="article-list">
       {articles.map((item, index)=>(
-      <details key={index}>
+      <details className={themeMode+"details"} key={index}>
       <summary>{item.title}</summary>
       <p>{item.summary}<button className="article-more-button" value={index} onClick={selectArticle}>Read More</button></p>
       </details>

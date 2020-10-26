@@ -1,13 +1,18 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import './Footer.css';
 import github from './github-brands.svg';
 import linkedIn from './linkedin-in-brands.svg';
 import twitter from './twitter-brands.svg'
 import logo from '../header/personalLogo.png'
+import { AppContext } from "../themeProvider-component/AppTheme";
 
 function Footer() {
+
+  
+  const { themeMode } = useContext(AppContext);
+
   return(
-    <section className="footer-container">
+    <section className={themeMode+"footer-container"}>
     <p className="footer-info">Creative Inc &reg;</p>
       <div className="footer-child1">
         <img className="footer-logo" src={logo}></img>

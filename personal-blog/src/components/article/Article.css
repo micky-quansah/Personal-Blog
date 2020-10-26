@@ -30,6 +30,8 @@
   height: 60vh;
   width: 100%;
   margin: 20px auto;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .article-paragraph{
   font-size: 1.5rem;
@@ -56,10 +58,53 @@
   color:#20251f;
 }
 .author{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 150;
   line-height: 2rem;
   text-align: center;
   margin-right: 3rem;
   color: #20251f;
 }
+
+  /* dark mode */
+
+  .darkarticle-title{
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    font-weight: 200;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-style: italic;
+    line-height: 2em;
+  }
+  .darkarticle-time{
+    font-size: 0.7rem;
+    margin-bottom: 30px;
+    color: orange;
+    text-align: center;
+  }
+  .darkarticle-paragraph{
+    font-size: 1.5rem;
+    font-weight: 100;
+    line-height: 2.5rem;
+    text-align: left;
+    margin-bottom: 2rem;
+    color:#e7e7e7;
+  }
+  .darkarticle-subject-matter{
+    font-size: 1.5rem;
+    font-weight: 100;
+    line-height: 2rem;
+    text-align: center;
+    margin-right: 3rem;
+    color:#dfdfdf;
+  }
+  .darkauthor{
+    font-size: 1.2rem;
+    font-weight: 150;
+    line-height: 2rem;
+    text-align: center;
+    margin-right: 3rem;
+    color: #e4e4e4;
+  }

@@ -3,7 +3,7 @@
   width: 100%;
   padding: 20px;
   border-radius: 20px 20px 0 0;
-  /* background: rgba(0, 0, 0, 0.295); */
+  background: rgba(0, 238, 255, 0.568);
   display: grid;
   grid-template-columns: 10% 50% 40%;
 }
@@ -42,3 +42,15 @@
   width: 50px;
   margin: 0;
 }
+
+  /* dark mode */
+
+  .darkfooter-container{
+    height: 50vh;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px 20px 0 0;
+    background:#0d0a30;
+    display: grid;
+    grid-template-columns: 10% 50% 40%;
+  }
