@@ -9,23 +9,20 @@ function Ratings() {
   const [comment, setComment] = useState({value:""});
   const [displayComment, setDisplayComment] = useState(["no comments yet"]);
   
-  let downClick = 0;
-
-  
   const handleUpVote = () => {
-    let upClick = 0;
-    
-    console.log(upClick);
-    if(upClick % 2 == 0){
-      return setUpVote(upVote+1);
+    if (upVote === 0) {
+      setUpVote(upVote+1);
+    } else {
+      setUpVote(upVote-1);
     }
-    return setUpVote(upVote-1);
   }
 
   const handleDownVote = () => {
-    downClick++;
-    if(downClick!==0){
+
+    if (downVote === 0) {
       setDownVote(downVote+1);
+    } else {
+      setDownVote(downVote-1);
     }
   }
 
