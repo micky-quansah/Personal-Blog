@@ -22,7 +22,7 @@ function Footer() {
         <div className="table">
         <ul className="sociallogo">
           <li className="footer-li"><a href="https://github.com/micky-quansah"><img className="footer-img" alt="" src={github} alt="github" /></a></li>
-          <li className="footer-li"><a href="#"><img className="footer-img" alt="" src={linkedIn} alt="linkedIn" /></a></li>
+          <li className="footer-li"><a href="www.linkedin.com/in/micheal-quansah"><img className="footer-img" alt="" src={linkedIn} alt="linkedIn" /></a></li>
           <li className="footer-li"><a href="#"><img className="footer-img" alt="" src={twitter} alt="twitter" /></a></li>
         </ul>
         </div>

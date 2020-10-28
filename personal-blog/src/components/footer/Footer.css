@@ -1,5 +1,5 @@
 .footer-container{
-  height: 50vh;
+  height: 50%;
   width: 100%;
   padding: 20px;
   border-radius: 20px 20px 0 0;
@@ -8,9 +8,9 @@
   grid-template-columns: 10% 50% 40%;
 }
 .footer-logo{
-  height: 200px;
-  margin:  20px 50px;
-  width: 300px;
+  height: 80%;
+  margin:  0.5rem 1rem;
+  width: 100%;
 }
 .footer-info{
   font-size: 0.8rem;
@@ -38,8 +38,8 @@
 	margin: 0 auto;
 }
 .footer-img {
-  height: 50px;
-  width: 50px;
+  height: 3rem;
+  width: 3rem;
   margin: 0;
 }
 
