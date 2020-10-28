@@ -17,10 +17,9 @@ function Ratings() {
     
     console.log(upClick);
     if(upClick % 2 == 0){
-      setUpVote(upVote+1);
-    } else {
-      setUpVote(upVote-1);
+      return setUpVote(upVote+1);
     }
+    return setUpVote(upVote-1);
   }
 
   const handleDownVote = () => {
