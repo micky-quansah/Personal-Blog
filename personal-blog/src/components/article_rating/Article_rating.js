@@ -45,8 +45,8 @@ function Ratings() {
         </div>
         <div className="votes">
           <p className="count" >{upVote}</p>
-          <img className="rating-icons" onClick={handleUpVote} src={upvote}/>
-          <img className="rating-icons" onClick={handleDownVote} src={downvote}/>
+          <img className="rating-icons" alt="" onClick={handleUpVote} src={upvote}/>
+          <img className="rating-icons" alt="" onClick={handleDownVote} src={downvote}/>
           <p className="count" > {downVote} </p>
         </div>
           <ul className="displayComment">

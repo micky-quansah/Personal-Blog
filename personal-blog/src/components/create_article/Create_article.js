@@ -55,9 +55,9 @@ function CreateArticle(props) {
     e.preventDefault();
 
     var today = new Date(),
-    date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+    currentDate = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
 
-    setDate(date);
+    setDate(currentDate);
 
     props.resentArticle({
       title: title.value,
@@ -89,7 +89,7 @@ function CreateArticle(props) {
 
         <label className="create-article-labels" htmlFor="image" >Select an image</label>
         <input type="file" id="image" name="image" onChange={handleChange} /><br/>
-        <img src={img}/><br/><br/>
+        <img src={img} alt="" /><br/><br/>
 
         <label className="create-article-labels" htmlFor="paragraph1" >First Paragraph</label><br/>
         <textarea className={themeMode+"create-article-textareas"} value={paragraphOne.value} id="paragraph1" rows="10" cols="100" placeholder="Enter First Paragraph Here" name="paragraphOne" onChange={handleParagraph1}></textarea><br/>

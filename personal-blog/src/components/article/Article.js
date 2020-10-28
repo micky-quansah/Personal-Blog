@@ -17,7 +17,7 @@ function Article(props) {
           <p className="article-time">{item.date}</p>
           <p className="article-summary">{item.summary}</p>
           {/* <div className="article-image" style={{ backgroundImage: `url(${item.img})` }} ></div> */}
-          <img className="article-image" src={item.img}></img>
+          <img className="article-image" alt="article pic" src={item.img}></img>
           <p className={themeMode+"article-paragraph"}>{item.first_paragrapg}</p>
           <p className={themeMode+"article-paragraph"}>{item.second_paragrapg}</p>
           <p className={themeMode+"article-paragraph"}>{item.third_paragrapg}</p>
