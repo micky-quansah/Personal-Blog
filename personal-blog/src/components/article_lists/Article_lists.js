@@ -12,7 +12,6 @@ function ArticleLists(props) {
   const selectArticle = (e)=>{
     select(true);
     itemIndex(e.target.value)
-    console.log(e.target.value);
   }
 
   let articles = props.article;
